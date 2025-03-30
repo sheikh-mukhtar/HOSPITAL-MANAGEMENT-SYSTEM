@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doctors Time Table</title>
+<style>
+body
+{margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url('images/01.jpg');
+
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0.5;
+}
+.footer
+{
+	position: fixed;
+	width: 100%;
+	background-color:grey;
+	bottom: 0;
+	left: 0;
+	font-size: 20px;
+	text-align: center;	
+}
+
+td {
+    text-align: center;
+    padding: 20px;
+    height: 90px;
+    border: 1px solid #f2f244;
+}
+th {
+    text-align: center;
+    padding: 20px;
+    height: 20px;
+    color: #fff;
+    background-color: orange;
+    border: 1px solid #f2f244;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+td:hover
+{
+	background-color: #66b3ff;
+	color: #fff;
+	cursor: pointer;
+}
+.nav{
+width:100%;
+background:#000033;
+height:90px;
+margin-top:0px;
+opacity:0.6;
+}
+.nav ul{
+list-style:none;
+padding:0;
+margin:0;
+position:absolute;
+
+}
+.nav li{
+float:left;
+margin-top:10px;
+}
+.nav a{
+width:150px;
+color:white;
+display:block;
+text-decoration:none;
+font-size:30px;
+text-align:center;
+padding:20px;
+border-radius:10px;
+font-family:century gothic;
+font-weight:bold;
+}
+.nav a:hover{
+background:red;
+transition:0.2s;
+}
+header
+{
+	position: fixed;
+}
+</style>
+</head>
+<body>
+	<header class="nav">
+<ul>
+<li> <a href ="index.html"> Home</a></li>
+<li> <a href ="about.html"> About</a></li>
+<li> <a href ="contact.html"> Contact</a></li>
+<li> <a href ="vamshi/feedback/feedback.html"> Feedback</a></li>
+</ul>
+</header><br><br><br><br><br><br>
+		<h1 style="font-size: 50px;text-decoration: underline; margin-top:0px;"><center><font color="red">Doctors Time Table</font></center></h1>
+<table>
+	<tr>
+		<th>Time</th>
+		<th>Monday</th>
+		<th>Tuesday</th>
+		<th>Wednesday</th>
+		<th>Thursday</th>
+		<th>Friday</th>
+		<th>Saturday</th>
+		<th>Sunday</th>
+	</tr>
+	<tr>
+		<td>08:00-09:00</td>
+		<td>Office 224,Hall B Room:125</td>
+		<td>Pediatric Clinic  <br> Dr Tom Smith</td>
+		<td>     </td>
+		<td>     </td>
+		<td>Out Patient Surgery  <br> Dr Paul Gibb</td>
+		<td>Primary Health Care<br>     Dr Rateep</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>09:00-10:00</td>
+		<td>Gynaecological Clinic <br>   Dr Rateep</td>
+		<td> </td>
+		<td>Primary Health Care <br>  Dr Sandeep</td>
+		<td>Cardiac Clinic     <br> Dr Vamsi</td>
+		<td></td>
+		<td>Out Patient Surgery   <br> Dr Venky</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>10:00-11:00</td>
+		<td></td>
+		<td>Gynacological   <br> Dr Venky</td>
+		<td></td>
+		<td>Primary Health Care  <br>  Dr Vamsi</td>
+		<td>Cardiac Clinic <br>  Dr Rateep</td>
+		<td></td>
+		<td>Primary Health Care  <br> Sandeep</td>
+	</tr>
+	<tr>
+		<td>14:00-15:00</td>
+		<td>Out Patient Surgery  <br>   Dr Sandeep</td>
+		<td>Cardiac Clinic  <br>  Dr Vamsi</td>
+		<td></td>
+		<td>Primary Health Care <br>  Dr Rateep</td>
+		<td>Primary Health Care  <br> Dr Venky</td>
+		<td></td>
+		<td></td>
+
+	</tr>
+	<tr>
+		<td>15:00-16:00</td>
+		<td>Gynacological<br> Dr Rateep</td>
+		<td></td>
+		<td>Primary Health Care <br>Dr Venky </td>
+		<td></td>
+		<td></td>
+		<td>Primary Health Care <br>  Dr Sandeep</td>
+		<td>Cardiac Clinic  <br>  Dr Vamsi</td>
+
+	</tr>
+	<tr>
+		<td>16:00-17:00</td>
+		<td></td>
+		<td>Cardiac Clinic  <br> Dr Vamsi</td>
+		<td>Gynacological Clinic <br>  Dr Venky</td>
+		<td></td>
+		<td></td>
+		<td>Primary Health Care  <br>  Dr Rateep</td>
+		<td>Primary Health Care  <br> Dr Sandeep</td>
+		</tr>
+	</table>
+	<br><br><br><br><br><br><br><br>
+	<div class="footer" style="color:#fff;">
+		<p>&#169;2018 Florida Hospital Care</p>
+	</div>
+</body>
+</html>

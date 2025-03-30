@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.nav{
+width:100%;
+background:#000033;
+height:90px;
+margin-top:0px;
+opacity:0.6;
+}
+.nav ul{
+list-style:none;
+padding:0;
+margin:0;
+position:absolute;
+
+}
+.nav li{
+float:left;
+margin-top:10px;
+}
+.nav a{
+width:150px;
+color:white;
+display:block;
+text-decoration:none;
+font-size:30px;
+text-align:center;
+padding:20px;
+border-radius:10px;
+font-family:century gothic;
+font-weight:bold;
+}
+.nav a:hover{
+background:red;
+transition:0.2s;
+}
+.footer
+{
+	width: 100%;
+	background-color:grey;
+	bottom: 0;
+	left: 0;
+	font-size: 20px;
+	text-align: center;	
+	height: 50px;
+}
+.column img
+{
+  opacity: 0.7;
+}
+.column img:hover
+{
+  transform:scale(1.11);
+  cursor: pointer;
+  opacity: 1;
+}
+header
+{
+	position: fixed;
+}
+</style>
+</head>
+<body>
+<header class="nav">
+<ul>
+<li> <a href ="index.html"> Home</a></li>
+<li> <a href ="about.html"> About</a></li>
+<li> <a href ="contact.html"> Contact</a></li>
+<li> <a href ="vamshi/feedback/feedback.html".html"> Feedback</a></li>
+</ul>
+</header>
+<br><br><br><br>
+<h2 style="text-align: center;font-size: 50px;color: red; margin-top: 0px;"> DOCTOR'S LIST </h2>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/rateep reddy.jpg" alt="Rateep" style="width:100%" height="400px">
+      <div class="container">
+        <h2>Dr.Rateep Reddy</h2>
+        <p class="title">DENTAL Care</p>
+        <p>Basic dental care involves brushing and flossing your teeth regularly, seeing your dentist and/or dental hygienist for regular checkups and cleanings, and eating a mouth-healthy diet, which means foods high in whole grains, vegetables and fruits, and dairy products.</p>
+        <form action="dr1.html">
+        <p><button class="button">Read more</button></p></form>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/vinay.jpg" alt="Sandeep" style="width:100%" height="400px">
+      <div class="container">
+        <h2>Dr.Sandeep Sagar</h2>
+        <p class="title">OTOLOGY</p>
+        <p>Otology is a branch of medicine which studies normal and pathological anatomy and physiology of the ear (hearing and vestibular sensory systems and related structures and functions) as well as their diseases, diagnosis and treatment.</p>
+        <form action="dr2.html">
+        <p><button class="button">Read more</button></p></form>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="images/venkatesh.jpg" alt="Venky" style="width:100%" height="400px">
+      <div class="container">
+        <h2>Dr.Venkatesh</h2>
+        <p class="title">CARDIAC</p>
+        <p>Image result for cardiac specialist
+A cardiologist is a doctor with special training and skill in finding, treating and preventing diseases of the heart and blood vessels.</p><br>
+       <form action="dr3.html">
+        <p><button class="button">Read more</button></p></form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/ger.jpg" alt="Gerry" style="width:100%" height="400px">
+      <div class="container">
+        <h2>Dr.Gerry Saldanha</h2>
+        <p class="title">HEPATOLOGY</p>
+        <p>Belong to the organization that advances you, your career, and the field of hepatology by providing the ultimate in liver research, training, and care of patients with liver disease.</p><br>
+       <form action="dr4.html">
+        <p><button class="button">Read more</button></p></form>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/srikanth.jpg" alt="Vamshi" style="width:100%" height="400px">
+      <div class="container">
+        <h2>Dr.Vamshi krishna</h2>
+        <p class="title">ORTHOPEDICS</p>
+        <p>Orthopedic surgery or orthopedics, also spelled orthopaedic[s], is the branch of surgery concerned with conditions involving the musculoskeletal system.</p><br><br>
+        <form action="dr5.html">
+        <p><button class="button">Read more</button></p></form>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="images/tony.png" alt="Tony" style="width:100%" height="400px">
+      <div class="container">
+        <h2>Dr.Tony Hammond</h2>
+        <p class="title">Cardiologist</p>
+        <p>Cardiology is a branch of medicine dealing with disorders of the heart as well as parts of the circulatory system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology.</p>
+        <form action="dr6.html">
+        <p><button class="button">Read more</button></p></form>
+      </div>
+    </div>
+  </div>
+</div><br><br><br>
+<div class="footer" style="color:#fff;">
+		<p>&#169;2018 Florida Hospital Care</p>
+	</div>
+</body>
+</html>

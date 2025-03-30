@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.0.9/fontawesome-free-5.0.9/web-fonts-with-css/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<style>
+				body
+		{
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-image:url("images/logo2.png");
+	/*		background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url('logo2.png');*/
+			background-size: 80% 50%;
+			background-position: center;
+			margin:0px;
+			padding: 0px;
+		}
+		header
+		{
+			background-image:linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0)),url("video1.mp4");
+			background: rgba(0,0,0,0.6);
+			height: 100vh;
+			background-attachment: fixed;
+			padding-top: 1px;
+
+		}
+		.footer
+{
+	width: 100%;
+	height: 100px;
+	background-color:grey;
+	bottom: 0;
+	left: 0;
+	font-size: 20px;
+	text-align: center;	
+}
+		.video-background
+		{
+			margin: 0px;
+			padding-top:  20px;
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			z-index: -100;
+			opacity: 0.9;
+		}
+		.logo
+		{
+			margin: 10px 50px;
+			height: 80px;
+			width: 290px;
+		}
+		.logo:hover
+		{
+			transform: scale(1.111);
+			cursor: pointer;
+		}
+		.navbar
+		{
+			background: rgba(0,0,0,.6);
+			height: 100px;
+			position: fixed;
+			z-index: 100;
+			display: block;
+			width: 100%;
+		}
+		.navbar ul
+		{
+			float: right;
+			list-style: none;
+			margin: 20px;
+		}
+		.navbar ul li
+		{
+			display: inline-block;
+			margin: 15px 5px;
+		}
+		.navbar ul li a
+		{
+			border:none;
+			background: orange;
+			border-radius: 5px;
+			font-size:28px;
+			padding:5px 10px;
+			width: auto;
+			text-decoration: none;
+			color: #FFF;
+			font-family: sans-serif;
+			letter-spacing: 2px;
+		}
+		.navbar ul li:hover
+		{
+			transform: scale(1.111);		
+		}
+		.navbar ul li a:hover
+		{
+			transform: scale(1.111);
+			background: #0099cc;
+			color: #fff;			
+		}
+		.navbar ul ul
+		{
+			background: #33ffcf;
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			margin: 0px;
+			width: 250px;
+			position: absolute;
+			top: auto;
+
+		}
+		.navbar ul ul li
+		{
+			display: inline-block;
+			padding: 0px;
+			margin: 2px;
+			height:auto;
+			float:none;		
+			width: 150px;	
+			position:relative;
+			font-size:20px;
+			text-align: center;
+		}
+		.navbar ul ul li a{
+		padding:10px;
+		color:white;
+		font-size:15px;
+		text-align:center;
+		width: 200px;
+		float: left;
+		}
+.navbar ul ul li a:hover{
+background:#00bfff;
+color:white;
+transition:0.2s;
+} 
+.navbar ul li:hover>ul{
+	display:inline-block;
+}
+.navbar ul ul{
+	display:none;
+}
+		.msg
+		{
+			position: relative;
+			text-align: center;
+			font-family: sans-serif;
+			color: #fff;
+			top: 150px;
+		}
+		.msg h1
+		{
+			font-size: 52px;
+			padding: 20px;
+			margin:0px 0px 0px 160px;
+			text-align: left;
+			font-family: cursive;
+			text-decoration: underline,;
+		}
+		.btn
+		{
+			font-size: 24px;
+			color: #fff;
+			letter-spacing: 2px;
+			margin: 10px;
+			padding: 13px 30px;
+			text-decoration: none;
+			border: 1px solid red;
+			border-radius: 25px;
+		}
+		.btn1
+		{
+			background: red;
+			color: #fff;
+		}
+		.btn1:hover
+		{
+			background-color: #1aff1a;
+			color: #fff;
+			transform: scale(1.111);
+		}
+		.btn2:hover
+		{
+			transform: scale(1.111);
+			background: #1aff1a;
+			color: white;
+			transition: 0.3s;
+		}
+		.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 100;
+}
+.icon-bar a {
+  display: block;
+  text-align: left;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+	transform: scale(1.125);
+    background-color: #000;
+}
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+.google {
+  background: #dd4b39;
+  color: white;
+}
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+.whatsapp
+{
+	background: lime;
+	color: white;
+}
+h3:after
+{
+	width: 200px;
+	height: 3px;
+	background-color: #e67e22;
+	border-radius: 5px;
+	display: block;
+	content: " ";
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.copy
+{
+	width: 70%;
+	margin-left: 15%;
+	margin-bottom: 20px;
+}
+.features h3
+{
+	margin-top:60px;
+	margin-bottom: 30px;
+	font-size: 40px;
+}
+.arranging
+{
+	text-align: justify;
+	font-size: 18px;
+}
+.features i
+{
+	font-size: 60px;
+	color: #e67e22;
+    margin-left: 35%;
+}
+.features h4
+{
+	margin-left: 0px;
+	font-size: 26px;
+	text-align: center;
+}
+.container
+{
+	border: 2px solid black;
+	border-color: #fff;
+	border-radius: 25px;
+	background-color: #f2f2f2;
+	padding:40px; 
+	background: rgba(242,242,242,0.9);
+}
+.treat
+{
+	margin: 100px;	
+	border: 2px solid black;
+	border-color: #fff;
+	border-radius: 25px;
+	background-color: #f2f2f2;
+	padding:40px; 
+	height: 1100px;
+	background: rgba(242,200,242,0.8);
+
+}
+.treat_show
+{
+	margin: 50%;
+list-style: none;
+width: 100%;
+}
+.treat-show li
+{
+	padding: 5px;
+	display: block;
+	width: auto;
+	height: 50%;
+	float: left;
+}
+.treat-photo
+{
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+.treat-photo img
+{
+		border-radius: 15px;
+	width: 30%;
+	transition: all 0.6s;
+}
+.treat-photo img:hover
+{
+	cursor: pointer;
+transform: scale(1.35);
+}
+.cities
+{
+	margin-top: 100px;
+}
+.cities img
+{
+	width: 100%;
+	margin-top: 50px;
+}
+.cities i
+{
+	text-align: left;
+	color: #ff0000;
+	font-size: 20px;
+}
+.cities p
+{
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+	font-size: 13px;
+}
+.test
+{
+	margin:0px;
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('images/01.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 20px;
+	padding-bottom: 40px; 
+	padding-left: 100px;
+	padding-right: 100px;
+	color: white;
+}
+.test p
+{
+	color: white;
+	line-height: 25px;
+	text-align: justify;
+	margin-top: 40px;
+	font-size: 20px;
+}
+.test cite img
+{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+	</style>
+<script type="text/javascript">
+	function abc()
+	{
+		var can=prompt("Enter Patient's Id:","ID Number");
+		if(can==12345)
+		{
+			alert('Booking has been Cancelled Successfully!!');
+			}
+			else
+			{
+				alert('Your booking has not Cancelled!!');
+			}
+		}
+		function logout() {
+			var retVal = confirm("Are you sure want to Logout ??");
+               if( retVal == true ){
+                  open("first.html");
+                  close("index.html");
+               }
+               else{
+                  return false;
+               }
+
+		}
+
+</script>
+</head>
+<body>
+<div class="icon-bar">
+  <a href="sm1.html" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="sm2.html" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="sm3.html" class="google"><i class="fa fa-google"></i></a> 
+  <a href="sm4.html" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="sm5.html" class="youtube"><i class="fa fa-youtube"></i></a> 
+  <a href="sm6.html" class="whatsapp"><i class="fa fa-whatsapp"></i></a> 
+</div>
+
+<div class="navbar">
+	  <a target="_self" href="images/logo.jpg">
+		<img src="images/logo.jpg" class="logo"></a>
+		<ul>
+			<li><a href="index.html"><i class="fa fa-home"></i></a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
+			<li><a href="#">Departments <i class="fa fa-arrow-down"></i>&nbsp;</a>
+			<ul>
+			<li><a href="doctors-time.html">Doctors Time</a></li><br>
+			<li><a href="doctors.html">Doctors List</a></li><br>
+			<li><a href="facility.html">Facilities & Services</a></li>
+			<li><a href="career.html">Carrer page</a></li>
+			<li><a href="vamshi/feedback/feedback.html">Feedback</a></li>
+			<li><a href="vamshi/Gallery/gallery.html">Gallery</a></li>
+			<li><a href="error.html">More..</a></li>
+
+  			 </ul>
+			</li>
+			<li><a onclick="logout()" style="background-color: #66ff33; cursor: pointer; "><i class="fa fa-close"></i>Logout</a></li>	
+			</ul>
+			</div>
+	<header>
+		<br><br><br><br><br>
+	<p style="color: red;font-size: 70px; text-decoration:underline;"><marquee scrollamount="35" direction="left"><i class="fa fa-ambulance"></i>&nbsp;For Emergency <i class="fa fa-phone"></i>&nbsp;<b>1800-236-856/57</b></marquee></p>
+<video autoplay="" loop="" class="video-background" muted="" plays-inline>
+			<source src="videos/video1.mp4" type="video/mp4">
+		</video>	
+			<section class="content">
+	<div class="msg">
+		<h1 >The skill to heal.The sprite to care</h1><br><br><br>
+		<a href="opd.html" class=" btn btn1">Book Appoinment</a>
+		<a href="#" onclick="abc()" class=" btn btn2">Cancel Appoinment</a>
+	</div>
+</section>
+</header>
+<section class="features">
+	<h3 class="text-center">Get Our Hospitality As Home-Care</h3>
+	<p class="copy">
+	</p>
+
+	<div class="container">
+		<div class="row">
+	<div class="col-md-3">
+         			<i class="fa fa-hospital-o"></i>
+         				<h4>Have Best Hospital</h4><br>
+				<p class="arranging">Our Hospital have 1000+ rooms in which more than 80% of the rooms are Air-Conditioned, with lower charges as compared to any other Hospital in city. We have IICU,PICU,NICU,ICU and many others. We also have the CT-Scan and Chemotherapy, and much more. 
+	</p>
+			</div>
+
+			<div class="col-md-3">
+				<i class="fa fa-user-md"></i>
+					<h4>Have Best Doctors </h4><br>
+				<p class="arranging">We have the most qualified and experienced Doctors, which are Best of the Best in their respective fields and have conducted hundreds of SUCCESSFUL operations. Our staff treat everyone as a special patient with 100% efforts in their work.
+	</p>
+			</div>
+
+			
+<div class="col-md-3">
+	<i class="fa fa-heartbeat"></i>
+		<h4>Have Cardiac Treatment</h4><br>
+				<p class="arranging">Our specialty is in Cardiac related diseases, this is because we have created the reputation among our worthy patients that our treatment is far more successful and our hospitality makes the patient feel better, which satisfies them all. 
+	</p>
+			</div>
+			<div class="col-md-3">
+                 <i class="fa fa-ambulance"></i>
+				<h4>Ambulance 24-Hours</h4><br>
+				<p class="arranging" style="word-spacing: 1px">
+                Best Ambulance service with 24-hour facilty makes our Hospital as one of the best Hospitals in the city.
+                Our ambulances are equipped with high Technologies equippments which will help the patients in emergency conditions with junior doctors too.
+					</p>
+			</div>
+		</div>
+	</div>
+	<h3 class="text-center">Specialist of Our Hospital</h3>
+	<p class="copy">
+	</p>
+<section class="treat">
+	<ul class="treat-show">
+		<li>
+			<figure class="treat-photo" style="position: relative;">
+					  <a target="_self" href="images/ss1.jpg">
+				<img src="images/ss1.jpg" style="width:380px" height="320px" ></a>
+				<div style="position: absolute; text-align: center; bottom:0; color: #e60000; text-decoration: underline;font-weight: bold; font-size: 30px; font-family: Times New Roman;">
+					<p>CARDIOLOGISTS</p>
+				</div>
+			</figure>
+		</li>
+		<li>
+			<figure class="treat-photo" style="position: relative;">
+					  <a target="_self" href="images/ss2.jpg">
+				<img src="images/ss2.jpg" style="width:380px" height="320px"></a>
+				<div style="position: absolute; bottom:0; color: black; text-decoration: underline; color: #e60000; text-decoration: underline;font-weight: bold; font-size: 30px; font-family: Times New Roman;">
+					<p>GYNELOGISTS</p>
+				</div>
+			</figure>
+		</li>
+		<li>
+			<figure class="treat-photo" style="position: relative;">
+					  <a target="_self" href="images/ss3.jpg">
+				<img src="images/ss3.jpg" style="width:380px" height="320px"></a>
+				<div style="position: absolute; bottom:0; color: black; text-decoration: underline; color: #e60000; text-decoration: underline;font-weight: bold; font-size: 30px; font-family: Times New Roman;">
+					<p>DENTISTS</p>
+				</div>
+			</figure>
+		</li>
+		<li>
+			<figure class="treat-photo" style="position: relative;">
+				<a target="_self" href="images/ss4.jpg">
+				<img src="images/ss4.jpg" style="width:380px" height="320px"></a>
+				<div style="position: absolute; bottom:0; color: black; text-decoration: underline; color: #e60000; text-decoration: underline;font-weight: bold; font-size: 30px; font-family: Times New Roman;">
+					<p>ONCOLOGISTS</p>
+				</div>
+			</figure>
+		</li>
+		<li>
+			<figure class="treat-photo" style="position: relative;">
+				<a target="_self" href="images/ss5.jpg">
+				<img src="images/ss5.jpg" style="width:380px" height="320px"></a>
+				<div style="position: absolute; bottom:0; color: black; text-decoration: underline; color: #e60000; text-decoration: underline;font-weight: bold; font-size: 30px; font-family: Times New Roman;">
+					<p>DERMATOLOGISTS</p>
+				</div>
+			</figure>
+		</li>
+		<li>
+			<figure class="treat-photo" style="position: relative;">
+				<a target="_self" href="images/ss6.jpg">
+				<img src="images/ss6.jpg" style="width:380px" height="320px"></a>
+				<div style="position: absolute; bottom:0; color: black; text-decoration: underline; color: #e60000; text-decoration: underline;font-weight: bold; font-size: 30px; font-family: Times New Roman;">
+					<p>ALLERGISTS</p>
+				</div>
+			</figure>
+		</li>
+		<li>
+			<figure class="treat-photo" style="position: relative;">
+				<a target="_self" href="images/ss7.jpg">
+				<img src="images/ss7.jpg" style="width:380px" height="320px"></a>
+				<div style="position: absolute; bottom:0;left: 0; color: black; text-decoration: underline; color: #e60000; text-decoration: underline;font-weight: bold; font-size: 30px; font-family: Times New Roman;">
+					<p>ORTHOLOGISTS</p>
+				</div>
+			</figure>
+		</li>
+		<li>
+			<figure class="treat-photo" style="position: relative;">
+				<a target="_self" href="images/ss8.jpg">
+				<img src="images/ss8.jpg" style="width:380px" height="320px"></a>
+				<div style="position: absolute; bottom:0; color: black; text-decoration: underline; color: #e60000; text-decoration: underline;font-weight: bold; font-size: 30px; font-family: Times New Roman;">
+					<p>UROLOGIST</p>
+				</div>
+			</figure>
+		</li>
+		<li>
+			<figure class="treat-photo" style="position: relative;">
+				<a target="_self" href="images/ss9.jpg">
+				<img src="images/ss9.png" style="width:380px" height="320px"></a>
+				<div style="position: absolute; bottom:0; color: black; text-decoration: underline; color: #e60000; text-decoration: underline;font-weight: bold; font-size: 30px; font-family: Times New Roman;">
+					<p>HIV/AIDS</p>
+				</div>
+			</figure>
+		</li>
+
+	</ul>
+</section>
+<section class="cities">
+	<h3 class="text-center">Find US In These <q>CITIES</q> Too... </h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="images/cc1.jpg" style="width:250px" height="180px">
+				<h4>Bangalore</h4>
+			<p><i class="fa fa-cog"></i>1000+ Happy Customers</p><br>
+			<p><i class="fa fa-cog"></i>500+ Rooms</p><br>
+			<p><i class="fa fa-cog"></i>100+ Ambulances</p>
+			</div>
+			<div class="col-md-3">
+				<img src="images/cc2.jpg" style="width:250px" height="180px">
+				<h4>Jaipur</h4>
+			<p><i class="fa fa-cog"></i>1000+ Happy Customers</p><br>
+			<p><i class="fa fa-cog"></i>"Hospital of the City"</p><br>
+			<p><i class="fa fa-cog"></i>Most Equipped Hospital</p>
+			</div>
+			<div class="col-md-3">
+				<img src="images/cc3.jpg" style="width:250px" height="180px">
+				<h4>Mumbai</h4>
+			<p><i class="fa fa-cog"></i>1000+ Happy Customers</p><br>
+			<p><i class="fa fa-cog"></i>Visited by PM Modi</p><br>
+			<p><i class="fa fa-cog"></i>Biggest Branch</p>
+			</div>
+			<div class="col-md-3">
+				<img src="images/cc4.jpg" style="width:250px" height="180px">
+				<h4>Chandigarh</h4>
+			<p><i class="fa fa-cog"></i>1000+ Happy Customers</p><br>
+			<p><i class="fa fa-cog"></i>First to get IICU</p><br>
+			<p><i class="fa fa-cog"></i>Largest Pharmacy</p>
+			</div>
+		</div>
+	</div>
+</section>
+<br><br>
+<section class="test">
+	<h3 class="text-center">Our Patients, Our FAMILY...</h3>
+		<div class="row">
+			<div class="col-md-4">
+			
+					<p>
+					Hi this is Michael Sara, I was suffering from Throat Cancer around two years ago. Then I came to Takecare Regency and this was the turning point of my life, as I have got my life back with the help of the doctors present in this hospital. They are the best in their fields, and to me, they are my lifeline. I had given up all the hope, but they brought the confidence in me that yes still I can live my life and watch this world with new enthusiasm. Really obliged to the Doctors and the Staff. 
+					</p>
+					<cite style="font-size: 20px; color: lime"><img src="images/pp1.jpg">Mrs.Michael Sara</cite>
+				
+			</div>
+			<div class="col-md-4">
+				
+					<p>
+					I am from America, and was having problem in my backbone. After trying so many hospitals, I finally got TakeCare Regency reference by someone which totally changed my life. Doctors here are the best, atleast they take care of their patients like their own family. I was not only get rid of my back-pain but also got my life back. I am really thankful to the doctors and staff over here. This is the BEST, and I suggest all the other patients to just get tension free when they come in here.     
+					</p>
+					<cite style="font-size: 20px; color: lime"><img src="images/pp2.jpg">Mr.Dravid Hussy</cite>
+				
+			</div>
+			<div class="col-md-4">
+				
+					<p>
+					Hi this is Mukesh Kumar, and I am very much excited to tell you about the magic of this hospital. I was in comma from 2014 to 2016, but the doctors here does not give up on me, and finally their sheer Hardwork worked for me and guess, I got back my life. My family(including Doctors), were delighted and were thanking to God, but for me Doctors are my God because they saved my life when all the hope was over. This was my expirience and this is the magical power of this TakeCare Regency and thier doctors.   
+					</p>
+					<cite style="font-size: 20px; color: lime"><img src="images/pp3.jpg">Mr.Mukesh Kumar</cite>
+							</div>
+		</div>
+	</div>
+</section><br><br><br>
+<div class="footer" style="color:#fff;">
+		<p>&#169;2018 Florida Hospital Care</p>
+		<p>@ All rights reserved</p>
+	</div>
+</body>
+</html>
